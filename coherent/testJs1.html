@@ -1,0 +1,15 @@
+<script>
+	var test = function() {
+		this.chars = "";
+		this.add = function(strings) {
+			this.chars += strings;
+		}
+		this.show = function  () {
+			alert(this.chars);
+		}
+	}
+	hello = new test();
+	hello.add("hello");
+	hello.add("hi");
+	hello.show();
+</script>

@@ -1,0 +1,21 @@
+<script>
+	var test = function() {
+		this.chars = "";
+		this.add = function(strings) {
+			this.chars += strings;
+			return this;//返回
+		}
+		this.show = function  () {
+			alert(this.chars);
+		}
+	}
+	//分步的连续操作
+	// hello = new test();
+	// var tem = hello.add("hello");
+	// var tem1 = tem.add("hi");
+	// tem1.show();
+	
+	//同步的连续操作
+	hello = new test();
+	hello.add("hello").add("hi").show();
+</script>
